@@ -1,10 +1,6 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.Condition;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,13 +11,13 @@ import static com.codeborne.selenide.Selenide.*;
 import static ru.netology.data.DataGenerator.Registration.getRegisteredUser;
 
 public class AuthTest {
-    private static RequestSpecification requestSpec = new RequestSpecBuilder()
-            .setBaseUri("http://localhost")
-            .setPort(9999)
-            .setAccept(ContentType.JSON)
-            .setContentType(ContentType.JSON)
-            .log(LogDetail.ALL)
-            .build();
+//    private static RequestSpecification requestSpec = new RequestSpecBuilder()
+//            .setBaseUri("http://localhost")
+//            .setPort(9999)
+//            .setAccept(ContentType.JSON)
+//            .setContentType(ContentType.JSON)
+//            .log(LogDetail.ALL)
+//            .build();
 
 
     @BeforeEach
